@@ -1,0 +1,48 @@
+.topbar {
+  height: 46px;
+  width: 100%;
+  background-color: $white;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  padding-left: 60px;
+  padding-right: 60px;
+  z-index: 1000;
+
+  &__navigation {
+
+    .home {
+      width: 80px;
+      float: left;
+
+      @include fa();
+
+      @include text();
+    }
+
+    .registration {
+      width: 80px;
+      float: left;
+
+      @include fa();
+
+      @include text();
+    }
+
+    .switch {
+      width: 80px;
+      float: left;
+
+      @include fa();
+
+      @include text();
+    }
+
+    .title {
+      color: $gray;
+      width: 120px;
+      float: left;
+      padding-left: 250px;
+      font-size: 25px;
+      margin-top: 5px;
+    }
+  }
+}
