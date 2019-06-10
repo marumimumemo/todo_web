@@ -18,21 +18,12 @@
       @include text();
     }
 
-    .registration {
-      width: 80px;
-      float: left;
-
-      @include fa();
-
-      @include text();
-    }
-
     .title {
       color: $gray;
       width: 120px;
       float: left;
       margin-top: 15px;
-      padding-left: 330px;
+      padding-left: 410px;
       font-size: 25px;
       margin-top: 5px;
     }
