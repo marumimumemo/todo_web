@@ -1,0 +1,29 @@
+= render "shared/topbar"
+.task_edit
+  .title タスク変更
+  = link_to root_path do
+    .back_buttun 戻る
+  .form
+    = form_for(@task) do |f|
+      .field
+        .field-input
+          .text タイトル
+          = f.text_field :title, placeholder: "タイトル", maxlength: "15"
+      .field
+        .field-input
+          .text タスク内容
+          = f.text_area :body, placeholder: "タスク内容", maxlength: "30"
+      .field
+        .field-input
+          .date 予定日
+          = f.date_field :scheduled
+      .field
+        .field-input
+          .text 優先順位
+          = f.number_field :priority, placeholder: "優先順位を選択", min:1, max:12
+      .field
+        .field-input
+          .date 完了日
+          = f.date_field :completion
+      .actions
+        = f.submit "変更する", class: 'btn', data: {confirm: "このタスクを変更しますか?"}
