@@ -1,0 +1,55 @@
+.task_new {
+  height: 500px;
+  width: 600px;
+  margin: 50px auto;
+  background-color: $white;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.25);
+
+  .title {
+    height: 30px;
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-left: 40px;
+    color: $gray;
+  }
+
+  .form {
+    padding: 35px;
+
+    .field {
+      padding: 10px;
+
+      #task_title, #task_scheduled, #task_priority {
+        height: 43px;
+        width: 490px;
+      }
+
+      #task_body {
+        height: 86px;
+        width: 490px;
+      }
+
+    }
+
+    .actions {
+
+      .btn {
+        height: 47px;
+        width: 510px;
+        margin-top: 12px;
+        background-color: $gray;
+        color: $white;
+        border-radius: 80px;
+        box-shadow: none;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 20px;
+        padding: 6px 16px;
+        text-align: center;
+        white-space: nowrap;
+      }
+    }
+  }
+}

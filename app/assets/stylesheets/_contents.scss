@@ -1,3 +1,43 @@
+.tasklist_bar {
+  height: 40px;
+  weight: 100%;
+  margin: 0 auto;
+  background-color: $white;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  padding-left: 140px;
+  padding-right: 140px;
+  z-index: 1000;
+
+  &__navigation {
+
+    .tasklist_title {
+      color: $gray;
+      width: 160px;
+      margin-top: 8px;
+      font-size: 18px;
+      float: left;
+    }
+
+    .switch {
+      width: 80px;
+      float: left;
+
+      @include fa();
+
+      @include text();
+    }
+
+    .registration {
+      width: 80px;
+      float: left;
+
+      @include fa();
+
+      @include text();
+    }
+  }
+}
+
 .task_bar {
   height: 40px;
   weight: 100%;
@@ -49,7 +89,7 @@
   }
 }
 
-.tasklist {
+.task {
   height: 40px;
   weight: 100%;
   margin: 0 auto;
@@ -90,7 +130,7 @@
     margin-top: 15px;
   }
 
-  .delete_buttun{
+  .delete_buttun {
     height: 14px;
     width: 30px;
     float: left;
@@ -107,5 +147,6 @@
     padding: 8px 16px;
     text-align: center;
     white-space: nowrap;
+    text-decoration: none;
   }
 }

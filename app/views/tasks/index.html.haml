@@ -1,8 +1,19 @@
 = render "shared/topbar"
+.tasklist_bar
+  .tasklist_bar__navigation
+    .tasklist_title 未完了タスク一覧
+    .registration
+      = link_to new_task_path do
+        = fa_icon "plus"
+        .text 登録
+    .switch
+      = link_to "#" do
+        = fa_icon "toggle-on"
+        .text 完了
 .task_bar
   .title タイトル
   .scheduled 予定日
   .completion 完了日
   .priority 優先順位
   .delete 削除
-= render "shared/tasklist"
+= render partial: 'shared/task', collection: @tasks
