@@ -2,6 +2,10 @@
 .tasklist_bar
   .tasklist_bar__navigation
     .tasklist_title 未完了タスク一覧
+    .registration
+      = link_to new_task_path do
+        = fa_icon "plus"
+        .text 登録
     .switch
       = link_to "#" do
         = fa_icon "toggle-on"
