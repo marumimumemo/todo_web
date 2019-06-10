@@ -5,15 +5,19 @@
     = form_for(@task) do |f|
       .field
         .field-input
-          = f.text_field :title, placeholder: "タイトル", maxlength: "50"
+          .text タイトル
+          = f.text_field :title, placeholder: "タイトル", maxlength: "15"
       .field
         .field-input
-          = f.text_area :body, placeholder: "タスク内容"
+          .text タスク内容
+          = f.text_area :body, placeholder: "タスク内容", maxlength: "30"
       .field
         .field-input
+          .date 予定日
           = f.date_field :scheduled
       .field
         .field-input
+          .text 優先順位
           = f.number_field :priority, placeholder: "優先順位を選択", min:1, max:12
       .actions
         = f.submit "登録する", class: 'btn', data: {confirm: "このタスクを登録しますか?"}
