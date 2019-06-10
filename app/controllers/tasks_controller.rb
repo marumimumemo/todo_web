@@ -26,6 +26,19 @@ class TasksController < ApplicationController
     end
   end
 
+  def edit
+    @task = Task.find(params[:id])
+  end
+
+  def update
+    @task = Task.find(params[:id])
+    if @task.update(task_params)
+      redirect_to root_path, notice: "タスクが変更されました"
+    else
+      render :edit, alert: "変更に失敗しました"
+    end
+  end
+
   private
 
   def task_params

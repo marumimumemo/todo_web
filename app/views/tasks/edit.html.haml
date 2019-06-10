@@ -1,6 +1,8 @@
 = render "shared/topbar"
-.task_new
-  .title タスク新規作成
+.task_edit
+  .title タスク変更・閲覧
+  = link_to root_path do
+    .back_buttun 戻る
   .form
     = form_for(@task) do |f|
       .field
@@ -19,5 +21,9 @@
         .field-input
           .text 優先順位
           = f.number_field :priority, placeholder: "優先順位を選択", min:1, max:12
+      .field
+        .field-input
+          .date 完了日
+          = f.date_field :completion
       .actions
-        = f.submit "登録する", class: 'btn', data: {confirm: "このタスクを登録しますか?"}
+        = f.submit "変更する", class: 'btn', data: {confirm: "このタスクを変更しますか?"}
