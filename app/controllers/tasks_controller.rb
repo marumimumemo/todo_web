@@ -1,8 +1,8 @@
 class TasksController < ApplicationController
 
   def index
-    @tasks = Task.asc
-    @completion_tasks = Task.desc
+    @tasks = Task.order("scheduled ASC")
+    @completion_tasks = Task.order("completion DESC")
   end
 
   def new
