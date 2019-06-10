@@ -1,0 +1,19 @@
+= render "shared/topbar"
+.task_new
+  .title タスク新規作成
+  .form
+    = form_for(@task) do |f|
+      .field
+        .field-input
+          = f.text_field :title, placeholder: "タイトル", maxlength: "50"
+      .field
+        .field-input
+          = f.text_area :body, placeholder: "タスク内容"
+      .field
+        .field-input
+          = f.date_field :scheduled
+      .field
+        .field-input
+          = f.number_field :priority, placeholder: "優先順位を選択", min:1, max:12
+      .actions
+        = f.submit "登録する", class: 'btn'
