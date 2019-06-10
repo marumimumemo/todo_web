@@ -27,20 +27,12 @@
       @include text();
     }
 
-    .switch {
-      width: 80px;
-      float: left;
-
-      @include fa();
-
-      @include text();
-    }
-
     .title {
       color: $gray;
       width: 120px;
       float: left;
-      padding-left: 250px;
+      margin-top: 15px;
+      padding-left: 330px;
       font-size: 25px;
       margin-top: 5px;
     }
