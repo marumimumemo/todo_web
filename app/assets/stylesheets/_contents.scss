@@ -26,6 +26,15 @@
 
       @include text();
     }
+
+    .registration {
+      width: 80px;
+      float: left;
+
+      @include fa();
+
+      @include text();
+    }
   }
 }
 
