@@ -1,0 +1,39 @@
+.notification {
+  .notice {
+    height: 35px;
+    width: 600px;
+    background-color: $white;
+    color: $gray;
+    text-align: center;
+    top: 55px;
+    left: 26%;
+    padding-top: 6px;
+    position: absolute;
+    z-index: 100;
+    border: 1px solid $gray_line;
+    -webkit-animation: cssAnimation 0s ease-in 3s forwards;
+  }
+
+  .alert {
+    height: 35px;
+    width: 600px;
+    background-color: $white;
+    color: $gray;
+    padding-top: 6px;
+    text-align: center;
+    top: 55px;
+    left: 26%;
+    position: absolute;
+    z-index: 100;
+    border: 1px solid $gray_line;
+    -webkit-animation: cssAnimation 0s ease-in 3s forwards;
+  }
+}
+
+@-webkit-keyframes cssAnimation {
+    to {
+        width:0;
+        height:0;
+        visibility:hidden;
+    }
+}
