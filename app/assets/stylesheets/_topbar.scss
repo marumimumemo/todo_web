@@ -7,7 +7,7 @@
   padding-right: 60px;
   z-index: 1000;
 
-  &__navigation {
+  &__navi {
 
     .home {
       width: 80px;
@@ -18,7 +18,7 @@
       @include text();
     }
 
-    .title {
+    .web_title {
       color: $gray;
       width: 120px;
       float: left;
