@@ -6,7 +6,7 @@ class CreateTasks < ActiveRecord::Migration
       t.string :title,     null: false, index:true
       t.text :body,        null: false
       t.string :scheduled, null: false
-      t.string :completion
+      t.string :finished
       t.string :priority,  null: false
     end
   end
