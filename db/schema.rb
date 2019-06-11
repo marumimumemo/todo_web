@@ -19,7 +19,7 @@ ActiveRecord::Schema.define(version: 20190609100309) do
     t.string   "title",      limit: 255,   null: false
     t.text     "body",       limit: 65535, null: false
     t.string   "scheduled",  limit: 255,   null: false
-    t.string   "completion", limit: 255
+    t.string   "finished",   limit: 255
     t.string   "priority",   limit: 255,   null: false
   end
 
