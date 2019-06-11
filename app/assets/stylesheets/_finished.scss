@@ -1,160 +1,4 @@
-.unfinish {
-
-  .tasklist_bar {
-    height: 40px;
-    weight: 100%;
-    margin: 0 auto;
-    background-color: $white;
-    border-bottom: 1px solid rgba(0,0,0,0.05);
-    padding-left: 140px;
-    padding-right: 140px;
-    z-index: 1000;
-
-    &__navigation {
-
-      .tasklist_title {
-        color: $gray;
-        width: 160px;
-        margin-top: 8px;
-        font-size: 18px;
-        float: left;
-      }
-
-      .switch {
-        width: 80px;
-        float: left;
-
-        @include fa();
-
-        @include text();
-      }
-
-      .registration {
-        width: 80px;
-        float: left;
-
-        @include fa();
-
-        @include text();
-      }
-    }
-  }
-
-  .task_bar {
-    height: 40px;
-    weight: 100%;
-    margin: 0 auto;
-    background-color: $white;
-    border-bottom: 1px solid rgba(0,0,0,0.05);
-    padding-left: 140px;
-    padding-right: 140px;
-    z-index: 1000;
-
-    .title {
-      width: 410px;
-      float: left;
-      color: $gray;
-      font-size: 13px;
-      margin-top: 15px;
-    }
-
-    .scheduled {
-      width: 120px;
-      float: left;
-      color: $gray;
-      font-size: 13px;
-      margin-top: 15px;
-    }
-
-    .completion {
-      width: 120px;
-      float: left;
-      color: $gray;
-      font-size: 13px;
-      margin-top: 15px;
-    }
-
-    .priority {
-      width: 120px;
-      float: left;
-      color: $gray;
-      font-size: 13px;
-      margin-top: 15px;
-    }
-
-    .delete {
-      width: 120px;
-      float: left;
-      color: $gray;
-      font-size: 13px;
-      margin-top: 15px;
-    }
-  }
-
-  .task {
-    height: 40px;
-    weight: 100%;
-    margin: 0 auto;
-    background-color: $white;
-    border-bottom: 1px solid rgba(0,0,0,0.05);
-    padding-left: 140px;
-    padding-right: 140px;
-
-    .title {
-      width: 410px;
-      float: left;
-      color: $gray;
-      font-size: 13px;
-      margin-top: 15px;
-    }
-
-    .scheduled {
-      width: 120px;
-      float: left;
-      color: $gray;
-      font-size: 13px;
-      margin-top: 15px;
-    }
-
-    .completion {
-      width: 120px;
-      float: left;
-      color: $gray;
-      font-size: 13px;
-      margin-top: 15px;
-    }
-
-    .priority {
-      width: 120px;
-      float: left;
-      color: $gray;
-      font-size: 13px;
-      margin-top: 15px;
-    }
-
-    .delete_buttun {
-      height: 14px;
-      width: 30px;
-      float: left;
-      color: $white;
-      font-size: 13px;
-      margin-top: 6px;
-      background-color: $gray;
-      border-color: transparent;
-      border-radius: 100px;
-      box-shadow: none;
-      cursor: pointer;
-      font-weight: bold;
-      line-height: 20px;
-      padding: 8px 16px;
-      text-align: center;
-      white-space: nowrap;
-      text-decoration: none;
-    }
-  }
-}
-
-.finish {
+.finished_tasklist {
   display: none;
 
   .tasklist_bar {
@@ -167,7 +11,7 @@
     padding-right: 140px;
     z-index: 1000;
 
-    &__navigation {
+    .tasklist_navi {
 
       .tasklist_title {
         color: $gray;
@@ -177,7 +21,7 @@
         float: left;
       }
 
-      .switch {
+      .task_registration {
         width: 80px;
         float: left;
 
@@ -186,7 +30,7 @@
         @include text();
       }
 
-      .registration {
+      .switch_off {
         width: 80px;
         float: left;
 
@@ -197,7 +41,7 @@
     }
   }
 
-  .task_bar {
+  .column_bar {
     height: 40px;
     weight: 100%;
     margin: 0 auto;
@@ -223,7 +67,7 @@
       margin-top: 15px;
     }
 
-    .completion {
+    .finished {
       width: 120px;
       float: left;
       color: $gray;
@@ -244,6 +88,24 @@
       float: left;
       color: $gray;
       font-size: 13px;
+      margin-top: 15px;
+    }
+  }
+
+  .message_bar {
+    height: 40px;
+    weight: 100%;
+    margin: 0 auto;
+    background-color: $white;
+    padding-left: 140px;
+    padding-right: 140px;
+    z-index: 1000;
+
+    .message {
+      width: 410px;
+      float: left;
+      color: $gray;
+      font-size: 15px;
       margin-top: 15px;
     }
   }
@@ -273,7 +135,7 @@
       margin-top: 15px;
     }
 
-    .completion {
+    .finished {
       width: 120px;
       float: left;
       color: $gray;
