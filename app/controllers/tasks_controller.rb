@@ -1,8 +1,8 @@
 class TasksController < ApplicationController
 
   def index
-    @tasks = Task.order("scheduled ASC")
-    @completion_tasks = Task.order("completion DESC")
+    @unfinished_tasks = Task.unfinished.asc
+    @finished_tasks = Task.finished.desc
   end
 
   def new
@@ -14,7 +14,7 @@ class TasksController < ApplicationController
     if @task.save
       redirect_to root_path, notice: "タスクが登録されました"
     else
-      render :index, alert: "登録に失敗しました"
+      render :new, alert: "登録に失敗しました"
     end
   end
 
@@ -43,7 +43,7 @@ class TasksController < ApplicationController
   private
 
   def task_params
-    params.require(:task).permit(:title, :body, :scheduled, :completion, :priority)
+    params.require(:task).permit(:title, :body, :scheduled, :finished, :priority)
   end
 
 end
