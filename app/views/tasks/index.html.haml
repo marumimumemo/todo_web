@@ -1,39 +1,46 @@
 = render "shared/topbar"
-.unfinish
+.unfinished_tasklist
   .tasklist_bar
-    .tasklist_bar__navigation
+    .tasklist_navi
       .tasklist_title 未完了タスク一覧
-      .registration
+      .task_registration
         = link_to new_task_path do
           = fa_icon "plus"
           .text 登録
-      .switch
+      .switch_on
         = fa_icon "toggle-on"
         .text 完了
-  .task_bar
+  .column_bar
     .title タイトル
     .scheduled 予定日
-    .completion 完了日
+    .finished 完了日
     .priority 優先順位
     .delete 削除
-  = render partial: 'shared/task', collection: @tasks
+  -if @unfinished_tasks.count.to_i == 0
+    .message_bar
+      .message 未完了タスクがありません
+  -else
+    = render partial: 'shared/task', collection: @unfinished_tasks
 
-.finish
+.finished_tasklist
   .tasklist_bar
-    .tasklist_bar__navigation
+    .tasklist_navi
       .tasklist_title 完了タスク一覧
-      .registration
+      .task_registration
         = link_to new_task_path do
           = fa_icon "plus"
           .text 登録
-      .switch
-        = link_to "#" do
-          = fa_icon "toggle-on"
-          .text 未完了
-  .task_bar
+      .switch_off
+        = fa_icon "toggle-off"
+        .text 未完了
+  .column_bar
     .title タイトル
     .scheduled 予定日
-    .completion 完了日
+    .finished 完了日
     .priority 優先順位
     .delete 削除
-  = render partial: 'shared/task', collection: @completion_tasks
+  -if @finished_tasks.count.to_i == 0
+    .message_bar
+      .message 完了タスクがありません
+  -else
+    = render partial: 'shared/task', collection: @finished_tasks
