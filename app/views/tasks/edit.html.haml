@@ -15,12 +15,12 @@
           = f.text_area :body, placeholder: "タスク内容", maxlength: "30"
       .field
         .field-input
-          .date 予定日
-          = f.date_field :scheduled
-      .field
-        .field-input
           .text 優先順位
           = f.select :priority, [1,2,3,4,5,6,7,8,9,10,11,12], {include_blank: '優先順位を選択'}
+      .field
+        .field-input
+          .date 予定日
+          = f.date_field :scheduled
       .field
         .field-input
           .date 完了日
