@@ -1,6 +1,6 @@
 = render "shared/topbar"
 .task_new
-  .title タスク新規作成
+  .title タスク登録
   .form
     = form_for(@task) do |f|
       .field
@@ -9,8 +9,8 @@
           = f.text_field :title, placeholder: "タイトル", maxlength: "15"
       .field
         .field-input
-          .text タスク内容
-          = f.text_area :body, placeholder: "タスク内容", maxlength: "30"
+          .text タスクの内容
+          = f.text_area :body, placeholder: "タスクの内容", maxlength: "30"
       .field
         .field-input
           .date 予定日
