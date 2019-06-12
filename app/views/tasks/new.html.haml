@@ -6,11 +6,11 @@
       .field
         .field-input
           .text タイトル
-          = f.text_field :title, placeholder: "タイトル", maxlength: "15"
+          = f.text_field :title, placeholder: "タイトル", maxlength: "30"
       .field
         .field-input
           .text タスクの内容
-          = f.text_area :body, placeholder: "タスクの内容", maxlength: "30"
+          = f.text_area :body, placeholder: "タスクの内容", maxlength: "120"
       .field
         .field-input
           .date 予定日
