@@ -23,11 +23,13 @@
       #task_title, #task_scheduled, #task_priority {
         height: 43px;
         width: 490px;
+        color: $gray;
       }
 
       #task_body {
         height: 86px;
         width: 490px;
+        color: $gray;
       }
 
       .date, .text {
