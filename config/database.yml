@@ -49,6 +49,6 @@ test:
 #
 production:
   <<: *default
-  database: todo_web_production
-  username: todo_web
-  password: <%= ENV['TODO_WEB_DATABASE_PASSWORD'] %>
+  database: heroku_7b4ec5f310066ab
+  username: b26aaaae20a572
+  password: <%= ENV['DATABASE_PASSWORD'] %>
