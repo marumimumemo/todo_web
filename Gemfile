@@ -54,3 +54,7 @@ gem 'sprockets', '3.7.2'
 gem 'haml-rails'
 gem 'erb2haml'
 gem 'font-awesome-rails'
+
+#
+gem 'therubyracer', platforms: :ruby
+gem 'rails_12factor', group: :production
