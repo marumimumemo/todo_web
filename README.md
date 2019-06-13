@@ -2,12 +2,16 @@
 
 # ToDoリストの開発
 
+# URL
+https://todowebmr.herokuapp.com/
+
 # 開発環境
 - フロント: haml,scss,javascript
 - バックエンド: Ruby
 - フレームワーク: Ruby on rails
 - DB: MySQL
 - バージョン管理: Github
+- クラウド： heroku
 
 # 実装した機能
 - タスク一覧表示
