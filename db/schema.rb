@@ -14,13 +14,14 @@
 ActiveRecord::Schema.define(version: 20190609100309) do
 
   create_table "tasks", force: :cascade do |t|
-    t.datetime "created_at",               null: false
-    t.datetime "updated_at",               null: false
-    t.string   "title",      limit: 255,   null: false
-    t.text     "body",       limit: 65535, null: false
-    t.string   "scheduled",  limit: 255,   null: false
-    t.string   "finished",   limit: 255
-    t.string   "priority",   limit: 255,   null: false
+    t.datetime "created_at",                              null: false
+    t.datetime "updated_at",                              null: false
+    t.string   "title",      limit: 255,                  null: false
+    t.text     "body",       limit: 65535,                null: false
+    t.date     "scheduled",                               null: false
+    t.date     "finished"
+    t.string   "priority",   limit: 255,                  null: false
+    t.boolean  "unfinished",               default: true, null: false
   end
 
   add_index "tasks", ["title"], name: "index_tasks_on_title", using: :btree

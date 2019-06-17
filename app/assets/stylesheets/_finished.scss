@@ -83,7 +83,15 @@
       margin-top: 15px;
     }
 
-    .delete {
+    .finished_b {
+      width: 120px;
+      float: left;
+      color: $gray;
+      font-size: 13px;
+      margin-top: 15px;
+    }
+
+    .delete_b {
       width: 120px;
       float: left;
       color: $gray;
@@ -149,6 +157,26 @@
       color: $gray;
       font-size: 13px;
       margin-top: 15px;
+    }
+
+    .finished_buttun {
+      height: 14px;
+      width: 30px;
+      float: left;
+      color: $white;
+      font-size: 13px;
+      margin-top: 6px;
+      background-color: $gray;
+      border-color: transparent;
+      border-radius: 100px;
+      box-shadow: none;
+      cursor: pointer;
+      font-weight: bold;
+      line-height: 20px;
+      padding: 8px 16px;
+      text-align: center;
+      white-space: nowrap;
+      text-decoration: none;
     }
 
     .delete_buttun {
