@@ -4,7 +4,7 @@ class Task < ActiveRecord::Base
   validates :body, presence: true
   validates :scheduled, presence: true
   validates :finished, presence: true, on: :update
-  validates :priority, presence: true, uniqueness: true
+  validates :priority, presence: true
 #scope
   scope :unfinished, -> { where(unfinished: ["1"]) }
   scope :finished, -> { where(unfinished: ["0"]) }
