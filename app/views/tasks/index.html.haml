@@ -15,7 +15,8 @@
     .scheduled 予定日
     .finished 完了日
     .priority 優先順位
-    .delete
+    .finished_b
+    .delete_b
   -if @unfinished_tasks.count.to_i == 0
     .message_bar
       .message 未完了タスクがありません
@@ -38,7 +39,8 @@
     .scheduled 予定日
     .finished 完了日
     .priority 優先順位
-    .delete
+    .finished_b
+    .delete_b
   -if @finished_tasks.count.to_i == 0
     .message_bar
       .message 完了タスクがありません
