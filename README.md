@@ -26,6 +26,7 @@ https://todowebmr.herokuapp.com/
 |------|----|-------|
 |title|string|index:true, null: false|
 |body|text|null: false|
-|scheduled|string|null: false|
-|finished|string|-------|
+|scheduled|date|null: false|
+|finished|date|-------|
 |priority|string|null: false|
+|unfinished|boolean|null: false,default: true|
