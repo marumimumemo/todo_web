@@ -5,6 +5,7 @@
     .back_buttun 戻る
   .form
     = form_for(@task) do |f|
+      = render 'layouts/error_messages', model: f.object
       .field
         .field-input
           .text タイトル
