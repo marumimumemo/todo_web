@@ -3,6 +3,7 @@
   .title タスク登録
   .form
     = form_for(@task) do |f|
+      = render 'layouts/error_messages', model: f.object
       .field
         .field-input
           .text タイトル
