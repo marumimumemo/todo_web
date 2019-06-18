@@ -45,7 +45,7 @@ group :development do
   gem 'spring'
 end
 
-# debug
+#debug
 gem 'pry-rails'
 
 #Front
@@ -55,6 +55,9 @@ gem 'haml-rails'
 gem 'erb2haml'
 gem 'font-awesome-rails'
 
-#
+#deploy
 gem 'therubyracer', platforms: :ruby
 gem 'rails_12factor', group: :production
+
+#error
+gem 'rails-i18n'

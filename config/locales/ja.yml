@@ -1,0 +1,9 @@
+ja:
+  activerecord:
+    attributes:
+      task:
+        title: タイトル
+        body: タスクの内容
+        scheduled: 予定日
+        finished: 完了日
+        priority: 優先順位
